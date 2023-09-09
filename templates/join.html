@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Join the Cause</title>
+</head>
+<body>
+    <header>
+        <h1>Join the Cause</h1>
+        <img src="../static/anusim.png" alt="Anusim Organization Logo">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/join">Join the Cause</a></li>
+        </ul>
+    </nav>
+    <main>
+        <form action="/submit" method="post">
+            <label for="id">ID:</label>
+            <input type="text" id="id" name="id" required><br>
+
+            <label for="full_name">Full Name:</label>
+            <input type="text" id="full_name" name="full_name" required><br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required><br>
+
+            <input type="checkbox" id="agree" name="agree" required>
+            <label for="agree">I agree to the terms</label><br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </main>
+</body>
+</html>
