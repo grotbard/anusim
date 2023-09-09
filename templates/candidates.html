@@ -31,8 +31,8 @@
                 <tr>
                     <td>{{ candidate.id }}</td>
                     <td>{{ candidate.full_name }}</td>
-                    <td>{{ candidate.email }}</td>
-                    <td>{{ candidate.phone }}</td>
+                    <td>{{ candidate.email[0] }}{{ '*' * (candidate.email|length - 1) if candidate.email|length > 1 else '' }}</td>
+                    <td>{{ candidate.phone[0] }}{{ '*' * (candidate.phone|length - 1) if candidate.phone|length > 1 else '' }}</td>
                     <td>{{ "Yes" if candidate.agree else "No" }}</td>
                 </tr>
                 {% endfor %}
